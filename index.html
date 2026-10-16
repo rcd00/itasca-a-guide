@@ -57,6 +57,7 @@
   .panel{display:none;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:22px 18px}
   @media (min-width:640px){.panel{padding:32px 36px}}
   .panel.on{display:block}
+  .photo{display:block;width:100%;height:auto;border-radius:12px;margin:14px 0;border:1px solid var(--line)}
   .back{all:unset;cursor:pointer;color:var(--accent);font-weight:600;margin-bottom:14px;display:inline-block;padding:6px 0}
   .panel h2{margin:0 0 12px;font-size:1.6rem}
   .panel h3{margin:22px 0 6px;font-size:1.05rem}
@@ -128,16 +129,18 @@ const sections = [
    <p>The door locks automatically. You can also lock it manually from outside by pressing and holding ✓.</p>`},
  {id:"mail", icon:"📬", title:"Mailbox", html:`
    <p>Your mailbox is at the cluster mailbox unit on the corner of <a href="https://maps.app.goo.gl/wA8WNgufPmi9e5UM9" target="_blank" rel="noopener">Itasca Street and Colton Avenue</a>.</p>
-   <div class="note">Your box is <strong>#1</strong>, top-left column, first box from the far-right mailbox.</div>`},
+   <div class="note">Your box is <strong>#1</strong>, top-left column, first box from the far-right mailbox.</div>
+   <img class="photo" src="images/mailbox-access.png" alt="Cluster mailbox unit with box #1 circled in red" loading="lazy">`},
  {id:"trash", icon:"🗑️", title:"Garbage & recycling", html:`
    <p>Garbage bags are under the kitchen sink.</p>
    <div class="note">Pickup is <strong>Tuesdays and Fridays</strong>. Please place the bin at the curb or sidewalk on those days.</div>
-   <p>There is no recycling pickup, but you can find <a href="https://ci.lubbock.tx.us/departments/solid-waste-management/recycling-solutions/recycling-locations" target="_blank" rel="noopener">nearby drop-off locations and accepted materials here</a>.</p>`},
- {id:"dryer", icon:"👕", title:"Dryer", html:`<p>Instructions coming soon.</p>`},
+   <p>There is no recycling pickup, but you can find <a href="https://ci.lubbock.tx.us/departments/solid-waste-management/recycling-solutions/recycling-locations" target="_blank" rel="noopener">nearby drop-off locations and accepted materials here</a>.</p>
+   <img class="photo" src="images/garbage.png" alt="Garbage and recycling information" loading="lazy">`},
+ {id:"dryer", icon:"👕", title:"Dryer", html:`
+   <img class="photo" src="images/dryer.png" alt="Dryer controls: turn the timer knob counter-clockwise to select time, then press to start; clean the lint trap first" loading="lazy">`},
  {id:"vacuum", icon:"🧹", title:"Vacuum", html:`
-   <p>To use the handheld attachments, find them in the console table by the entrance. The charger is there too if the vacuum needs charging.</p>`},
- {id:"coffee", icon:"☕", title:"Nespresso", html:`
-   <p>We've left some Vertuo pods for you. You're also welcome to use the reusable capsule if you prefer your own ground coffee like us — it's way cheaper!</p>`},
+   <p>To use the handheld attachments, find them in the console table by the entrance. The charger is there too if the vacuum needs charging.</p>
+   <img class="photo" src="images/vacuum.png" alt="Vacuum and handheld attachments" loading="lazy">`},
  {id:"checkout", icon:"🧳", title:"Check-out", draft:true, html:`
    <p>TODO: check-out time and what guests should do before leaving (e.g. trash, thermostat, lights, door).</p>`},
  {id:"rules", icon:"📋", title:"House rules", draft:true, html:`
