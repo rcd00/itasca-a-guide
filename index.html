@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Itasca – Guest Guide</title>
+<meta name="description" content="Welcome guide for your stay at Itasca in Lubbock, TX: Wi-Fi, home access, mailbox, local recommendations and more.">
+<meta name="theme-color" content="#1f7a72">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Itasca – Guest Guide">
+<meta property="og:description" content="Wi-Fi, home access, mailbox, local recommendations and more for your stay.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231f7a72'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle'%3E🏡%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f6f3ee; --card:#fff; --ink:#26302e; --muted:#6b7673; --line:#e6e0d6;
+    --accent:#1f7a72; --accent-ink:#fff; --accent-soft:#dff0ed; --warm:#e9a23b;
+    --radius:18px; --shadow:0 1px 2px rgba(0,0,0,.05),0 6px 20px rgba(38,48,46,.07);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#141a19;--card:#1e2625;--ink:#eef2f0;--muted:#9aa6a3;--line:#2c3634;--accent:#4cc2b6;--accent-ink:#0d1a18;--accent-soft:#1f3a37;--shadow:none}
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+
+  .hero{background:linear-gradient(135deg,#1f7a72,#2f9d8f 60%,#e9a23b);color:#fff;padding:calc(env(safe-area-inset-top) + 40px) 0 64px}
+  .hero h1{margin:0 0 8px;font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15}
+  .hero p{margin:0;max-width:34em;opacity:.95;font-size:clamp(1rem,2.5vw,1.15rem)}
+  .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;opacity:.85;margin-bottom:10px}
+
+  main.wrap{margin-top:-36px;padding-bottom:32px}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  @media (min-width:640px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
+  @media (min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+  .tile{all:unset;box-sizing:border-box;cursor:pointer;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:18px 14px;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;
+    font-weight:600;border:1px solid var(--line);transition:transform .15s}
+  .tile:hover{transform:translateY(-3px)}
+  .tile:focus-visible,.btn:focus-visible,.back:focus-visible,.panel a:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
+  .tile .ico{font-size:2rem;width:56px;height:56px;border-radius:16px;background:var(--accent-soft);display:grid;place-items:center}
+
+  .search{display:block;width:100%;margin:0 0 14px;padding:12px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;box-shadow:var(--shadow)}
+  .search:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
+  .empty{text-align:center;color:var(--muted);padding:24px 0}
+  .tile[hidden]{display:none}
+
+  .panel{display:none;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:22px 18px}
+  @media (min-width:640px){.panel{padding:32px 36px}}
+  .panel.on{display:block}
+  .back{all:unset;cursor:pointer;color:var(--accent);font-weight:600;margin-bottom:14px;display:inline-block;padding:6px 0}
+  .panel h2{margin:0 0 12px;font-size:1.6rem}
+  .panel h3{margin:22px 0 6px;font-size:1.05rem}
+  .panel ul{padding-left:20px}
+  .panel li{margin:6px 0}
+  .panel h2:focus{outline:none}
+  .panel img{display:block;max-width:100%;height:auto;border-radius:12px;margin:14px 0}
+  .contact{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+  .contact .btn{text-decoration:none;display:inline-block}
+  .note{background:var(--accent-soft);border-radius:12px;padding:12px 14px;margin:14px 0}
+
+  .wifi{display:grid;gap:10px;margin:14px 0}
+  .field{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .field small{display:block;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em}
+  .field code{font:600 1.05rem ui-monospace,Menlo,monospace;word-break:break-all}
+  .btn{all:unset;cursor:pointer;background:var(--accent);color:var(--accent-ink);padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem}
+  footer{text-align:center;color:var(--muted);font-size:.9rem;padding:8px 16px 32px}
+  footer .contact{justify-content:center}
+  @media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Itasca Guest Guide</div>
+    <h1>Welcome — we hope you enjoy your stay!</h1>
+    <p>We've put together some helpful guides throughout the house. Please don't hesitate to reach out if you need anything.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="homeview">
+    <input id="q" class="search" type="search" placeholder="Search the guide…" aria-label="Search the guide" autocomplete="off">
+    <nav id="home" class="grid" aria-label="Guide sections"></nav>
+    <p id="none" class="empty" hidden>No matching sections.</p>
+  </div>
+  <div id="panels"></div>
+</main>
+<footer>Questions? Just message your host.<div id="hostbtns" class="contact"></div></footer>
+
+<script>
+// Host contact: set your number (digits, with country code, e.g. "+18065550123"). Buttons stay hidden while empty.
+const HOST_PHONE = "";
+// Photos: put files in a photos/ folder and use photo("photos/keypad.jpg","Door keypad next to the front door").
+const photo = (src, alt) => `<img src="${src}" alt="${alt}" loading="lazy">`;
+// draft:true sections are hidden from guests; preview them by adding ?draft to the URL.
+const sections = [
+ {id:"wifi", icon:"📶", title:"Wi-Fi", html:`
+   <div class="wifi">
+     <div class="field"><div><small>Network</small><code>Be our guest</code></div><button class="btn" data-copy="Be our guest">Copy</button></div>
+     <div class="field"><div><small>Password</small><code>5532ItascaTexas2026</code></div><button class="btn" data-copy="5532ItascaTexas2026">Copy</button></div>
+   </div>`},
+ {id:"access", icon:"🔑", title:"Home access", html:`
+   <h3>Entering the home</h3>
+   <p>There are two ways to unlock the door: enter the <strong>last 4 digits of your cell phone number</strong> and press ✓, or use the fingerprint scanner.</p>
+   <h3>Locking the door</h3>
+   <p>The door locks automatically. You can also lock it manually from outside by pressing and holding ✓.</p>`},
+ {id:"mail", icon:"📬", title:"Mailbox", html:`
+   <p>Your mailbox is at the cluster mailbox unit on the corner of <a href="https://maps.app.goo.gl/wA8WNgufPmi9e5UM9" target="_blank" rel="noopener">Itasca Street and Colton Avenue</a>.</p>
+   <div class="note">Your box is <strong>#1</strong>, top-left column, first box from the far-right mailbox.</div>`},
+ {id:"eat", icon:"🌮", title:"Recommendations", html:`
+   <h3>Eat &amp; shop</h3>
+   <ul>
+     <li><strong>Tacos El Paisa Food Truck</strong> – amazing birria taco plate! Check their Facebook page for the current schedule.</li>
+     <li><strong>HEB</strong> – huge grocery store.</li>
+   </ul>
+   <h3>Hiking, camping, stargazing &amp; nature</h3>
+   <ul>
+     <li>Palo Duro Canyon State Park</li>
+     <li>Caprock Canyons State Park</li>
+     <li>Big Bend National Park – excellent for stargazing. Check the moon phase calendar and plan around a new moon.</li>
+   </ul>`},
+ {id:"trash", icon:"🗑️", title:"Garbage & recycling", html:`
+   <p>Garbage bags are under the kitchen sink.</p>
+   <div class="note">Pickup is <strong>Tuesdays and Fridays</strong>. Please place the bin at the curb or sidewalk on those days.</div>
+   <p>There is no recycling pickup, but you can find <a href="https://ci.lubbock.tx.us/departments/solid-waste-management/recycling-solutions/recycling-locations" target="_blank" rel="noopener">nearby drop-off locations and accepted materials here</a>.</p>`},
+ {id:"dryer", icon:"👕", title:"Dryer", html:`<p>Instructions coming soon.</p>`},
+ {id:"vacuum", icon:"🧹", title:"Vacuum", html:`
+   <p>To use the handheld attachments, find them in the console table by the entrance. The charger is there too if the vacuum needs charging.</p>`},
+ {id:"coffee", icon:"☕", title:"Nespresso", html:`
+   <p>We've left some Vertuo pods for you. You're also welcome to use the reusable capsule if you prefer your own ground coffee like us — it's way cheaper!</p>`},
+ {id:"checkout", icon:"🧳", title:"Check-out", draft:true, html:`
+   <p>TODO: check-out time and what guests should do before leaving (e.g. trash, thermostat, lights, door).</p>`},
+ {id:"rules", icon:"📋", title:"House rules", draft:true, html:`
+   <p>TODO: house rules (quiet hours, smoking, pets, guests, parking).</p>`},
+ {id:"emergency", icon:"🚨", title:"Emergency contacts", html:`
+   <div class="note">In an emergency, call <a href="tel:911"><strong>911</strong></a>.</div>
+   <div class="contact" data-hostbtns></div>`},
+];
+const draftMode = new URLSearchParams(location.search).has('draft');
+const visible = sections.filter(s => !s.draft || draftMode);
+
+const home = document.getElementById('home'), panels = document.getElementById('panels');
+for (const s of visible){
+  const b = document.createElement('button'); b.className='tile';
+  b.innerHTML = `<span class="ico" aria-hidden="true">${s.icon}</span>${s.title}`;
+  b.onclick = () => location.hash = s.id; b.dataset.title = s.title.toLowerCase(); b.dataset.text = (s.title + " " + s.html.replace(/<[^>]+>/g," ")).toLowerCase(); home.append(b);
+  const p = document.createElement('section'); p.className='panel'; p.id='p-'+s.id;
+  p.innerHTML = `<button class="back">← All sections</button><h2 tabindex="-1">${s.icon} ${s.title}</h2>${s.html}`;
+  p.querySelector('.back').onclick = () => location.hash = '';
+  panels.append(p);
+}
+function route(){
+  const id = location.hash.slice(1), p = document.getElementById('p-'+id);
+  document.querySelectorAll('.panel').forEach(x => x.classList.toggle('on', x === p));
+  document.getElementById('homeview').style.display = p ? 'none' : '';
+  window.scrollTo({top:0});
+  if (p) p.querySelector('h2').focus({preventScroll:true});
+}
+addEventListener('hashchange', route); route();
+
+// Search: filters tiles by title and section text
+document.getElementById('q').addEventListener('input', e => {
+  const q = e.target.value.trim().toLowerCase(); let n = 0;
+  for (const t of home.children){ const hit = !q || t.dataset.text.includes(q); t.hidden = !hit; n += hit; }
+  document.getElementById('none').hidden = n > 0;
+});
+
+// Contact host buttons (tel: / sms:)
+if (HOST_PHONE) document.querySelectorAll('#hostbtns, [data-hostbtns]').forEach(el => {
+  el.innerHTML = `<a class="btn" href="tel:${HOST_PHONE}">📞 Call host</a><a class="btn" href="sms:${HOST_PHONE}">💬 Text host</a>`;
+});
+
+document.addEventListener('click', async e => {
+  const b = e.target.closest('[data-copy]'); if (!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent='Copied ✓'; }
+  catch { b.textContent='Select & copy'; }
+  setTimeout(()=>b.textContent='Copy',1500);
+});
+</script>
+</body>
+</html>
