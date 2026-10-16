@@ -145,9 +145,6 @@ const sections = [
    <p>TODO: check-out time and what guests should do before leaving (e.g. trash, thermostat, lights, door).</p>`},
  {id:"rules", icon:"📋", title:"House rules", draft:true, html:`
    <p>TODO: house rules (quiet hours, smoking, pets, guests, parking).</p>`},
- {id:"emergency", icon:"🚨", title:"Emergency contacts", html:`
-   <div class="note">In an emergency, call <a href="tel:911"><strong>911</strong></a>.</div>
-   <div class="contact" data-hostbtns></div>`},
 ];
 const draftMode = new URLSearchParams(location.search).has('draft');
 const visible = sections.filter(s => !s.draft || draftMode);
